@@ -1,14 +1,14 @@
 [
 	{
 		name: "Chutney Marinade",
-		ingredients: "-Mayonnaise (2 tbsp) -Worcestershire Sauce (100 ml) -Braai Spice (To Liking) -Brown Sugar/Honey (3 tsp) -Strong Chutney (5 tbsp) -Olive Oil (1 tbsp)",
+		ingredients: "Mayonnaise (2 tbsp) -Worcestershire Sauce (100 ml) -Braai Spice (To Liking) -Brown Sugar/Honey (3 tsp) -Strong Chutney (5 tbsp) -Olive Oil (1 tbsp)",
 		recipe: "1: Stir in a container until evenly mixed.",
 		category: "Sauces"
 	},
 	
 	{
 		name: "Chutney Marinade Steak",
-		ingredients: "Chutney Marinade -Steak",
+		ingredients: "-Chutney Marinade -Steak",
 		recipe: "1: Prepare steak by rubbing with salt. -2: Transfer marinade into a container. -3: Put steak in the same container, coat with marinade and let sit for 2 hours or in fridge overnight. -4: Braai steak to desired level and baste semi-regularly. -5: Enjoy!",
 		category: "Braai"
 	}
