@@ -11,5 +11,12 @@
 		ingredients: "-Chutney Marinade -Steak",
 		recipe: "1: Prepare steak by rubbing with salt. -2: Transfer marinade into a container. -3: Put steak in the same container, coat with marinade and let sit for 2 hours or in fridge overnight. -4: Braai steak to desired level and baste semi-regularly. -5: Enjoy!",
 		category: "Braai"
+	},
+	
+	{
+		name: "Churros",
+		ingredients: "-Water (1 Cup) -Sugar -Pinch of Salt -Oil -All Purpose Flour - Cinammon",
+		recipe: "1: Boil water, sugar, salt and vegetable oil. -2: Once boiled, remove from heat and stir in the flour. -3: Transfer The dough into a pastry bag and pipe into strips. -4: Fry the churros in oil until golden brown. -5: Drain excess oil and roll the churros in cinammon sugar. -6 Enjoy!",
+		category: "Baking"
 	}
 ]
