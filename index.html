@@ -21,17 +21,31 @@
             font-family: dotoBold;
             text-shadow: 5px 5px green;
         }
-        ul {
+        .ulMain {
             list-style-type: none; 
             padding-left: 0;
             color: #00ff00;
             font-size: larger;
             font-family: dotoBold
-            
+                      
         }
 
-        ul li::before {
+       .ulMain li::before {
             content: "/bhill/Portfolio/> ";
+            color: #80FF00;
+            font-family: dotoBold
+        }
+        .ulWorkHistory {
+            list-style-type: none;
+            padding-left: 0;
+            color: #00ff00;
+            font-size: larger;
+            font-family: dotoBold
+
+        }
+
+        .ulWorkHistory li::before {
+            content: var(--w);
             color: #80FF00;
             font-family: dotoBold
         }
@@ -58,6 +72,7 @@
         }
         
         .type span {
+            color: #00ff00;
             word-break: break-all;
             height: 1.2em;
             width:0%;
@@ -98,18 +113,23 @@
 ==========================================================================================================================
   </pre>
   <div>
-      <ul>
+      <ul class="ulMain">
           <li>  <span class="type" style="--i: 0;"><span>
-            Software Engineer
+            Software Engineer at BBEnergy (Pty) Ltd.
             </span></span>
           </li>
           <li>
              <span class="type" style="--i: 1;"><span>
-               Microsoft Certified
+               Microsoft Certified (MCSD, MCSA)
              </span></span>
           </li>
           <li>
-              <span class="type" style="--i: 2;">
+             <span class="type" style="--i: 2;"><span>
+               Software Development & Database Development qualifications
+             </span></span>
+          </li>
+          <li>
+              <span class="type" style="--i: 3;">
                   <span>
                       Proud nerd
                   </span>
@@ -118,11 +138,7 @@
       </ul>
   </div>
     </br>
- <pre>
-==========================================================================================================================
-        <h1>Main Tech Stack</h1>
-==========================================================================================================================
-  </pre>
+
     <div class="horizontalStackDiv">
         <pre style="font-size: 5px">
             
@@ -165,37 +181,115 @@
       
     </div>
     </br>
+  <pre>
+==========================================================================================================================
+        <h1>Qualifications</h1>
+==========================================================================================================================
+  </pre>
+  <div>
+      <ul class="ulMain">
+          <li><span class="type" style="--i: 5;"><span>Microsoft Certified Solutions Developer (2019 - CTU)</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Microsoft Certified Solutions Associate (2019 - CTU)</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Certificate: Application and Software Development (2019 - CTU)</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Certificate: IT Database Development (2020 - CTU)</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>NSS (2018 - Hoër Volkskool Heidelberg)</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Various LinkedIn Learning Certifications</span></span></li>
+      </ul>
+  </div>
+  </br>
+  <pre>
+==========================================================================================================================
+        <h1>Work History</h1>
+==========================================================================================================================
+  </pre>
+  <div>
+      <ul class="ulWorkHistory">
+          <li style="--w: 'Oct 2023-Current >'; --i: 5">
+              <span class="type"><span style="text-shadow: 2.4px 2.4px green;">BBEnergy (Pty) Ltd</span></span>
+              </br>
+              <ul style="align-items: center">
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Maintaining and Scaling Bespoke Notification Service.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Wrote a PDF for a cost savings breakdown dashboard using MigraDoc.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Data Visualisation/Dashboarding with Razor Pages.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Maintaining internal WPF Admin App.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Maintaining and Deploying "Wabbit IoT" Maui App to App Stores.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>SQL Scripting and building SSRS Reports.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Various API integrations for utility meter data collection.</span></span></li>
+              </ul>
+          </li>
+          </br>
+          <li style="--w: 'Jul 2021-Oct 2023 >'; --i: 5">
+              <span class="type"><span style="text-shadow: 2.4px 2.4px green;">Thoughtware</span></span>
+              </br>
+              <ul style="align-items: center">
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Maintaining "FinanceApps", a Xamarin.Forms app at the time.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Wrote a bespoke solution for inventory forecasting using machine learning.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>Maintaining and implementing features throughout business process.</span></span></li>
+                  <li style="--w: ''; --i: 5"><span class="type"><span>General bug fixes and improvements.</span></span></li>
+              </ul>
+          </li>
+          </br>
+          <li style="--w: 'Apr 2021-Jul 2021 >'; --i: 5">
+              <span class="type"><span style="text-shadow: 2.4px 2.4px green;">Barman (Heidelberg Club)</span></span>
+          </li>
+          <li style="--w: 'Apr 2021-Jul 2022 >'; --i: 5">
+              <span class="type"><span style="text-shadow: 2.4px 2.4px green;">Ad-Hoc Barman (Lezaar Wedding Venue)</span></span>
+          </li>
+          <li style="--w: '2017-2020 >'; --i: 5">
+              <span class="type"><span style="text-shadow: 2.4px 2.4px green;">Waiter, Barman (Grill King Heidelberg)</span></span>
+          </li>
+        </ul>
+
+  </div>
+  </br>
+  <pre>
+==========================================================================================================================
+        <h1>Interests</h1>
+==========================================================================================================================
+  </pre>
+  <div>
+      <ul class="ulMain">
+          <li><span class="type" style="--i: 4;"><span>Dotnet</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Linux</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Docker/Kubernetes</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>CLI/Terminal Emulators (ZSH with custom aliases and functions)</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>3D Printing</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Efficient text editing (Helix currently, learning EMACS)</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Efficiency in general</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Reading</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Writing</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Gaming</span></span></li>
+      </ul>
+  </div>
+  </br>
     <pre>
 ==========================================================================================================================
         <h1>Skills</h1>
 ==========================================================================================================================
   </pre>
   <div>
-      <ul>
-          <li><span class="type" style="--i: 4;"><span>Adaptable</span></span></li>
-          <li><span class="type" style="--i: 4;"><span>Fast Learner</span></span></li>
-          <li><span class="type" style="--i: 4;"><span>Keen observation</span></span></li>
-          <li><span class="type" style="--i: 4;"><span>3D Printing</span></span></li>
-          <li><span class="type" style="--i: 4;"><span>Efficient text editing (Helix currently, learning EMACS)</span></span></li>
-          <li><span class="type" style="--i: 4;"><span>Efficiency in general</span></span></li>
+      <ul class="ulMain">
+          <li><span class="type" style="--i: 5;"><span>Adaptable</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Fast Learner</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Keen observation</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Persistence</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Teamwork</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Critical thinking</span></span></li>
       </ul>
   </div>
 <br/>
-    <pre>
+  <pre>
 ==========================================================================================================================
-        <h1>Interests</h1>
+        <h1>Values</h1>
 ==========================================================================================================================
   </pre>
-    <div>
-        <ul>
-            <li><span class="type" style="--i: 4;"><span>Linux</span></span></li>
-            <li><span class="type" style="--i: 4;"><span>Docker/Kubernetes</span></span></li>
-            <li><span class="type" style="--i: 4;"><span>CLI/Terminal Emulators (ZSH with custom aliases and functions)</span></span></li>
-            <li><span class="type" style="--i: 4;"><span>3D Printing</span></span></li>
-            <li><span class="type" style="--i: 4;"><span>Efficient text editing (Helix currently, learning EMACS)</span></span></li>
-            <li><span class="type" style="--i: 4;"><span>Efficiency in general</span></span></li>
-        </ul>
-    </div>
-    </br>
+  <div>
+      <ul class="ulMain">
+          <li><span class="type" style="--i: 5;"><span>Honesty</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Accountability</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Curiosity</span></span></li>
+          <li><span class="type" style="--i: 5;"><span>Loyalty</span></span></li>
+      </ul>
+  </div>
   </body>
 </html>
