@@ -1,11 +1,201 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <style>
+        @font-face {
+            font-family: dotoBold;
+            src: url(Fonts/Doto_Rounded-Bold.ttf);
+        }
+        
+        body{
+            background-color: #121212;
+        }
+        
+        h1{
+            color: #00ff00;
+            font-family: dotoBold;
+            text-shadow: 2.3px 2.3px green;
+        }
+        
+        h6{
+            color: #00ff00;
+            font-family: dotoBold;
+            text-shadow: 5px 5px green;
+        }
+        ul {
+            list-style-type: none; 
+            padding-left: 0;
+            color: #00ff00;
+            font-size: larger;
+            font-family: dotoBold
+            
+        }
+
+        ul li::before {
+            content: "/bhill/Portfolio/> ";
+            color: #80FF00;
+            font-family: dotoBold
+        }
+        pre{
+            color: #00ff00;
+        }
+        label{
+            color: #00ff00;
+        }
+        
+        .headerDiv{
+            padding: 10px;
+        }
+        
+        .horizontalStackDiv{
+            display: flex;
+            flex-direction: row;
+            text-shadow: 5px 5px green;
+        }
+
+        .type {
+            display:inline-flex;
+            color: #00ff00;
+        }
+        
+        .type span {
+            word-break: break-all;
+            height: 1.2em;
+            width:0%;
+            overflow: hidden;
+            animation:t 2s linear forwards;
+            animation-delay: calc(var(--i) * 1s);
+        }
+        .type span:before {
+            content:" ";
+            display:inline-block;
+        }
+              
+        @keyframes t{
+            90%,100% {width:100%}
+        }
     </style>
   </head>
-  <body style="background-color=green">
-    <div class=headerDiv>
+  <body>
+  <div class=headerDiv>
+      <h6>
+          <pre>
+88888888ba                                                 88                                  88        88  88  88  88  88                                                     
+88      "8b                                                88                                  88        88  ""  88  88  ""                                                     
+88      ,8P                                                88                                  88        88      88  88                                                         
+88aaaaaa8P'  8b,dPPYba,  ,adPPYYba,  8b,dPPYba,    ,adPPYb,88   ,adPPYba,   8b,dPPYba,         88aaaaaaaa88  88  88  88  88   ,adPPYb,d8   ,adPPYba,  8b,dPPYba,   8b,dPPYba,   
+88""""""8b,  88P'   "Y8  ""     `Y8  88P'   `"8a  a8"    `Y88  a8"     "8a  88P'   `"8a        88""""""""88  88  88  88  88  a8"    `Y88  a8P_____88  88P'   `"8a  88P'   `"8a  
+88      `8b  88          ,adPPPPP88  88       88  8b       88  8b       d8  88       88        88        88  88  88  88  88  8b       88  8PP"""""""  88       88  88       88  
+88      a8P  88          88,    ,88  88       88  "8a,   ,d88  "8a,   ,a8"  88       88        88        88  88  88  88  88  "8a,   ,d88  "8b,   ,aa  88       88  88       88  
+88888888P"   88          `"8bbdP"Y8  88       88   `"8bbdP"Y8   `"YbbdP"'   88       88        88        88  88  88  88  88   `"YbbdP"Y8   `"Ybbd8"'  88       88  88       88  
+                                                                                                                              aa,    ,88                                        
+                                                                                                                               "Y8bbdP"                                         
+          </pre>
+    </h6>
+    </div>
+    <pre>
+==========================================================================================================================
+        <h1>Overview</h1>
+==========================================================================================================================
+  </pre>
+  <div>
+      <ul>
+          <li>  <span class="type" style="--i: 0;"><span>
+            Software Engineer
+            </span></span>
+          </li>
+          <li>
+             <span class="type" style="--i: 1;"><span>
+               Microsoft Certified
+             </span></span>
+          </li>
+          <li>
+              <span class="type" style="--i: 2;">
+                  <span>
+                      Proud nerd
+                  </span>
+              </span>
+          </li>
+      </ul>
+  </div>
+    </br>
+ <pre>
+==========================================================================================================================
+        <h1>Main Tech Stack</h1>
+==========================================================================================================================
+  </pre>
+    <div class="horizontalStackDiv">
+        <pre style="font-size: 5px">
+            
+            
+            ,adba     ,adMba    AAAAAAA    UUU      AAA ========
+            MMM "8b   a8"MMM   AAAAAAAAA   UUU      AAA   |▒▒|
+            MMM    888   MMM  AAA     AAA  UUU      AAA   |▒▒|
+   adba     MMM          MMM  AAA     AAA  UUU      AAA   |▒▒|
+   8bbP     MMM          MMM  AAAAAAAAAAA  UUU      AAA   |▒▒|
+            MMM          MMM  AAA     AAA  UUU      AAA   |▒▒|
+            MMM          MMM  AAA     AAA  AAA      AAA   |▒▒|
+            MMM          MMM  AAA     AAA   `"8bbdbP"   ========
+        </pre>
+
+        <pre style="font-size: 5px">
+            
+            
+           88888888ba,      ,ad8888ba,  888888888888  888b      88  88888888888  888888888888  
+           88      `"8b    d8"'    `"8b      88       8888b     88  88                88       
+           88        `8b  d8'        `8b     88       88 `8b    88  88                88       
+    adba   88         88  88          88     88       88  `8b   88  88aaaaa           88       
+    8bbP   88         88  88          88     88       88   `8b  88  88"""""           88       
+           88         8P  Y8,        ,8P     88       88    `8b 88  88                88       
+           88      .a8P    Y8a.    .a8P      88       88     `8888  88                88       
+           88888888Y"'      `"Y8888Y"'       88       88      `888  88888888888       88       
+                                                                                    
+                                                                                    
+        </pre>
+
+        <pre style="font-size: 5px">                 <pre style="font-size: 5px">
+         ad88888ba     ,ad8888ba,    88                         ccccccccccccccc     ###       ###   
+        d8"     "8b   d8"'    `"8b   88                        ccccccccccccccc      ###       ###
+        Y8,          d8'        `8b  88                       ccccc              ###################      
+  adba  `Y8aaaaa,    88          88  88              adba     ccccc                 ###       ###  
+  8bbP    `"""""8b,  88          88  88              8bbP     ccccc                 ###       ###
+                `8b  Y8,    "88,,8P  88                       ccccc              ###################
+         Y8a     a8P   Y8a.    Y88P   88                       ccccccccccccccc      ###       ###    
+         "Y88888P"     `"Y8888Y"Y8a  88888888888                ccccccccccccccc     ###       ###
+            <pre>                                </pre>
       
     </div>
+    </br>
+    <pre>
+==========================================================================================================================
+        <h1>Skills</h1>
+==========================================================================================================================
+  </pre>
+  <div>
+      <ul>
+          <li><span class="type" style="--i: 4;"><span>Adaptable</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Fast Learner</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Keen observation</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>3D Printing</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Efficient text editing (Helix currently, learning EMACS)</span></span></li>
+          <li><span class="type" style="--i: 4;"><span>Efficiency in general</span></span></li>
+      </ul>
+  </div>
+<br/>
+    <pre>
+==========================================================================================================================
+        <h1>Interests</h1>
+==========================================================================================================================
+  </pre>
+    <div>
+        <ul>
+            <li><span class="type" style="--i: 4;"><span>Linux</span></span></li>
+            <li><span class="type" style="--i: 4;"><span>Docker/Kubernetes</span></span></li>
+            <li><span class="type" style="--i: 4;"><span>CLI/Terminal Emulators (ZSH with custom aliases and functions)</span></span></li>
+            <li><span class="type" style="--i: 4;"><span>3D Printing</span></span></li>
+            <li><span class="type" style="--i: 4;"><span>Efficient text editing (Helix currently, learning EMACS)</span></span></li>
+            <li><span class="type" style="--i: 4;"><span>Efficiency in general</span></span></li>
+        </ul>
+    </div>
+    </br>
   </body>
 </html>
